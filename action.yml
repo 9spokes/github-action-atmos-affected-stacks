@@ -243,6 +243,10 @@ runs:
         fi
 
         printf '%s\n' "${args[@]}" > "${RUNNER_TEMP}/atmos-affected-args"
+        
+        echo "atmos-affected-args:"
+        cat "${RUNNER_TEMP}/atmos-affected-args"
+        echo "--->8---"
 
     - name: atmos affected stacks for atmos pro
       id: affected-pro
